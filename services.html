@@ -1,0 +1,309 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+
+<title>Services</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+<div class="logo-box">
+<img src="ChatGPT Image Mar 11, 2026, 05_27_16 PM.png" class="logo" alt="VA design">
+<h2>VA Design Net</h2>
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="network.html">Network Types</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</div>
+
+</header>
+
+<section class="page">
+
+<h1>Our Services</h1>
+
+<p>Helping students learn network technology, infrastructure and digital connectivity.</p>
+
+<div class="card-container">
+
+<!-- Network Design -->
+
+<div class="card">
+
+<img src="WhatsApp Image 2026-03-11 at 1.55.48 PM.jpeg">
+
+<h3>Network Design</h3>
+
+<p>Learn how to design efficient computer networks.</p>
+
+<button onclick="toggleDetails('design')">Know More</button>
+
+<div id="design" class="details">
+
+<h4>Overview</h4>
+
+<p>
+Understand how computer networks are structured and how devices connect with each other.
+</p>
+
+<h4>Learning Roadmap</h4>
+
+<ul>
+<li>Introduction to Computer Networks</li>
+<li>LAN and WAN Design</li>
+<li>IP Addressing</li>
+<li>Network Topologies</li>
+<li>Network Troubleshooting</li>
+</ul>
+
+<h4>Recommended Resources</h4>
+
+<ul>
+<li>Cisco Networking Basics</li>
+<li>Network Fundamentals Guide</li>
+<li>Practical Networking Tutorials</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Network Security -->
+
+<div class="card">
+
+<img src="WhatsApp Image 2026-03-11 at 1.56.22 PM.jpeg">
+
+<h3>Network Security</h3>
+
+<p>Protect networks from cyber threats.</p>
+
+<button onclick="toggleDetails('security')">Know More</button>
+
+<div id="security" class="details">
+
+<h4>Overview</h4>
+
+<p>
+Learn how to secure computer networks from attacks and unauthorized access.
+</p>
+
+<h4>Security Topics</h4>
+
+<ul>
+<li>Firewall configuration</li>
+<li>Data encryption</li>
+<li>Network monitoring</li>
+<li>Cyber attack prevention</li>
+<li>Secure authentication</li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li>Cyber Security Fundamentals</li>
+<li>OWASP Security Guides</li>
+<li>Network Security Tutorials</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Network Setup -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<h3>Network Setup</h3>
+
+<p>Learn how to install and configure networks.</p>
+
+<button onclick="toggleDetails('setup')">Know More</button>
+
+<div id="setup" class="details">
+
+<h4>Overview</h4>
+
+<p>
+Learn how to install routers, switches and configure networks for homes or offices.
+</p>
+
+<h4>Setup Steps</h4>
+
+<ul>
+<li>Router installation</li>
+<li>Switch configuration</li>
+<li>LAN setup</li>
+<li>Wi-Fi configuration</li>
+<li>Network testing</li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li>Cisco Networking Academy</li>
+<li>Network Configuration Guides</li>
+<li>IT Support Tutorials</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- Network Community -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c">
+
+<h3>Network Community</h3>
+
+<p>Connecting learners interested in networking.</p>
+
+<button onclick="toggleDetails('community')">Know More</button>
+
+<div id="community" class="details">
+
+<h4>Overview</h4>
+
+<p>
+A community where students share networking knowledge, projects and ideas.
+</p>
+
+<h4>Community Activities</h4>
+
+<ul>
+<li>Networking workshops</li>
+<li>Tech meetups</li>
+<li>Hackathons</li>
+<li>Project collaboration</li>
+<li>Learning discussions</li>
+</ul>
+
+<h4>Platforms</h4>
+
+<ul>
+<li>Discord groups</li>
+<li>LinkedIn communities</li>
+<li>GitHub collaboration</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+<button class="close-cart" onclick="toggleCart()">✖</button>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear Cart</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">DesignNet</h3>
+
+<p>
+DesignNet helps students learn networking, technology and digital infrastructure.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="network.html">Network</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Network Design</a>
+<a href="#">Cyber Security</a>
+<a href="#">Community</a>
+<a href="#">Workshops</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@designnet.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 DesignNet | Connect • Design • Build</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

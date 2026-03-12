@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> VA Design Net</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="welcomeMessage()">
+
+<header>
+
+<div class="logo-box">
+<img src="ChatGPT Image Mar 11, 2026, 05_27_16 PM.png" class="logo" alt="VA design">
+<h2>VA Design Net</h2>
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="network.html">Network Types</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart<span id="cartCount" class="cart-count">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Learn Network Design</h1>
+
+<p>Understand computer networks, topology and how modern networks are designed.</p>
+
+<a class="btn"href="network.html">Explore network</a>
+</section>
+
+<section class="page">
+
+<h1>Topics in Design Net</h1>
+
+<div class="card-container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+
+<h3>LAN Network</h3>
+
+<p>Local Area Network connects computers within a small area like school, office or home.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1520869562399-e772f042f422">
+
+<h3>Network Topology</h3>
+
+<p>Study different network structures like star, bus, ring and mesh topology.</p>
+
+</div>
+
+<div class="card">
+
+<img src="WhatsApp Image 2026-03-11 at 1.39.03 PM.jpeg">
+
+<h3>Network Devices</h3>
+
+<p>Learn about routers, switches, hubs and modems used in network design.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-header">
+
+<h3>Your Cart</h3>
+
+<button class="close-cart" onclick="toggleCart()">✖</button>
+
+</div>
+
+<ul id="cartItems"></ul>
+
+<div class="cart-footer">
+
+<button onclick="clearCart()" class="clear-cart">Clear</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<h3 class="logo">Design Net</h3>
+
+<p>
+Learning computer networking concepts and understanding how networks are designed.
+</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-discord"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="network.html">Network Types</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Resources</h4>
+
+<a href="#">Network Design</a>
+<a href="#">Cyber Security</a>
+<a href="#">Community</a>
+<a href="#">Workshops</a>
+
+</div>
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>Email: hello@designnet.com</p>
+<p>Location: Mumbai, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 DesignNet | Connect • Design • Build</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
